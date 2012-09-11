@@ -14,30 +14,25 @@
             SelectCommand="SELECT * FROM [heste]"></asp:SqlDataSource>
     
         <br />
-        <asp:DropDownList ID="DropDownList1" runat="server">
+        <asp:DropDownList ID="DropDownListConnectionStrings" runat="server">
         </asp:DropDownList>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server" Height="216px" TextMode="MultiLine" 
-            Width="387px"></asp:TextBox>
+        <asp:TextBox ID="TextBoxSQL" runat="server" Height="300px" TextMode="MultiLine" 
+            Width="800px">select * from heste</asp:TextBox>
         <br />
         <asp:Button ID="ButtonExecuteQuery" runat="server" 
             onclick="ButtonExecuteQuery_Click" Text="Udfør" />
         <br />
         <asp:Label ID="LabelResponse" runat="server"></asp:Label>
-        <asp:GridView ID="GridViewResult" runat="server" AllowPaging="True" 
-            AllowSorting="True" CellPadding="4" DataKeyNames="id" 
-            DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="Vertical">
+        <asp:GridView ID="GridViewResult" runat="server" CellPadding="4" 
+            ForeColor="#333333" GridLines="Vertical" AutoGenerateColumns="true" 
+            AllowSorting="false">
             <AlternatingRowStyle BackColor="White" />
-            <Columns>
-                <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" 
-                    ReadOnly="True" SortExpression="id" />
-                <asp:BoundField DataField="navn" HeaderText="navn" SortExpression="navn" />
-                <asp:BoundField DataField="race" HeaderText="race" SortExpression="race" />
-                <asp:BoundField DataField="farve" HeaderText="farve" SortExpression="farve" />
-                <asp:BoundField DataField="antalBen" HeaderText="antalBen" 
-                    SortExpression="antalBen" />
-            </Columns>
             <EditRowStyle BackColor="#2461BF" />
+            
+            <EmptyDataTemplate>
+                &lt;empty&gt;
+            </EmptyDataTemplate>
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
             <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
