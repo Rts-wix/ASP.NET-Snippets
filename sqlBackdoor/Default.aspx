@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>SQL Ladeport</title>
+    <meta lang="da" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,6 +17,8 @@
         <br />
         <asp:DropDownList ID="DropDownListConnectionStrings" runat="server">
         </asp:DropDownList>
+        <asp:Button ID="ButtonNoGO" runat="server" onclick="ButtonNoGO_Click" 
+            Text="Fjern 'GO'" />
         <br />
         <asp:TextBox ID="TextBoxSQL" runat="server" Height="300px" TextMode="MultiLine" 
             Width="800px">select * from heste</asp:TextBox>

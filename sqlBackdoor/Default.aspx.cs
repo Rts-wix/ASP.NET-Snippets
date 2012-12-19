@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 public partial class sqlBackdoor_Default : System.Web.UI.Page
 {
@@ -91,5 +92,9 @@ public partial class sqlBackdoor_Default : System.Web.UI.Page
             conn.Close();
         }
 
+    }
+    protected void ButtonNoGO_Click(object sender, EventArgs e)
+    {
+        TextBoxSQL.Text = Regex.Replace(TextBoxSQL.Text, "^GO", "--GO", RegexOptions.Multiline);
     }
 }
