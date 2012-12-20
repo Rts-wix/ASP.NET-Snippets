@@ -19,6 +19,14 @@ public partial class Default2 : System.Web.UI.Page
 
 
     // U i CRUD
+
+    /// <summary>
+    /// Eventhandler for Knappen ButtonGem
+    ///     Udfører update af data fra formen, som måske, måske ikke er ændret af brugeren.
+    ///     Databinder repeateren, skjuler panelForm og sætter ButtonNy til default
+    /// </summary>
+    /// <param name="sender">Det objekt hvorfra eventet stammer</param>
+    /// <param name="e">yderligere oplysniger om eventet</param>
     protected void ButtonGem_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection();
@@ -42,6 +50,7 @@ public partial class Default2 : System.Web.UI.Page
         PanelForm.Visible = false;
         ButtonOpret.Visible = false;
         ButtonGem.Visible = false;
+
         form1.DefaultButton = "ButtonNy";
     }
 
