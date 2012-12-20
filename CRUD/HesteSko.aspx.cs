@@ -17,14 +17,16 @@ public partial class Default2 : System.Web.UI.Page
 
     }
 
+
+    // U i CRUD
     protected void ButtonGem_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection();
-        conn.ConnectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString1"].ToString();
+        conn.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
 
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = conn;
-        cmd.CommandText = "UPDATE Hestesko SET navn = @navn, størelse = @størelse, beskrivelse = @beskrivelse WHERE id = @id";
+        cmd.CommandText = "UPDATE ASPSNIPPETS_CRUD_Hestesko SET navn = @navn, størelse = @størelse, beskrivelse = @beskrivelse WHERE id = @id";
         cmd.Parameters.Add("@id", SqlDbType.Int).Value = ViewState["HesteskoId"].ToString();
 
         cmd.Parameters.Add("@navn", SqlDbType.VarChar).Value = TextBoxNavn.Text;
@@ -43,14 +45,15 @@ public partial class Default2 : System.Web.UI.Page
         form1.DefaultButton = "ButtonNy";
     }
 
+    // C i CRUD
     protected void ButtonOpret_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection();
-        conn.ConnectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString1"].ToString();
+        conn.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
 
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = conn;
-        cmd.CommandText = "INSERT INTO Hestesko (navn, størelse, beskrivelse) VALUES (@navn, @størelse, @beskrivelse)";
+        cmd.CommandText = "INSERT INTO ASPSNIPPETS_CRUD_Hestesko (navn, størelse, beskrivelse) VALUES (@navn, @størelse, @beskrivelse)";
 
         cmd.Parameters.Add("@navn", SqlDbType.VarChar).Value = TextBoxNavn.Text;
         cmd.Parameters.Add("@størelse", SqlDbType.VarChar).Value = TextBoxStørelse.Text; 
@@ -69,16 +72,19 @@ public partial class Default2 : System.Web.UI.Page
         form1.DefaultButton = "ButtonNy";
 
     }
+
+    
     protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
     {
+        // R i CRUD
         if (e.CommandName == "Ret")
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString1"].ToString();
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "SELECT * FROM Hestesko WHERE id = @id";
+            cmd.CommandText = "SELECT * FROM ASPSNIPPETS_CRUD_Hestesko WHERE id = @id";
 
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = e.CommandArgument.ToString();
 
@@ -101,14 +107,15 @@ public partial class Default2 : System.Web.UI.Page
 
             form1.DefaultButton = "ButtonGem";
         }
+        // D i CRUD
         else if (e.CommandName == "Slet")
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString1"].ToString();
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "DELETE FROM Hestesko WHERE id = @id";
+            cmd.CommandText = "DELETE FROM ASPSNIPPETS_CRUD_Hestesko WHERE id = @id";
 
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = e.CommandArgument.ToString();
 
@@ -124,9 +131,8 @@ public partial class Default2 : System.Web.UI.Page
 
             form1.DefaultButton = "ButtonNy";
         }
-
-
     }
+
     protected void ButtonNy_Click(object sender, EventArgs e)
     {
         TextBoxNavn.Text = "";

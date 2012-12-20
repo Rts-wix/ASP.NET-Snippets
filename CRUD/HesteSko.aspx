@@ -12,9 +12,9 @@
         <asp:Button ID="ButtonNy" runat="server" Text="Opret ny hestesko" 
             onclick="ButtonNy_Click" /><br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:DatabaseConnectionString1 %>" 
-            ProviderName="<%$ ConnectionStrings:DatabaseConnectionString1.ProviderName %>" 
-            SelectCommand="SELECT * FROM [Hestesko]">
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+            SelectCommand="SELECT * FROM [ASPSNIPPETS_CRUD_Hestesko]">
         </asp:SqlDataSource>
         
         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" 

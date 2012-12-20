@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <div>
         <h1>Demo af CRUD</h1>
-        
+        Begynd med <a href="HesteSko.aspx">Hestesko</a>
     </div>
     </form>
 </body>
