@@ -14,24 +14,18 @@ public partial class sqlBackdoor_Default : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            // alle sql connection strings
+            // alle sql connection strings fra systemet
             System.Configuration.ConnectionStringSettingsCollection connStrings = System.Web.Configuration.WebConfigurationManager.ConnectionStrings;
+            // indsæt i Dropdown-listen
+            DropDownListConnectionStrings.DataSource = connStrings;
+            DropDownListConnectionStrings.DataTextField = "Name";
+            DropDownListConnectionStrings.DataValueField = "ConnectionString";
+            DropDownListConnectionStrings.DataBind();
 
-            // TODO kan man bare bruge en datasource, og databind'e?
-            //DropDownListConnectionStrings.DataSource = connStrings;
-
-            if (connStrings != null)
-            {
-                DropDownListConnectionStrings.Items.Clear();
-                foreach (System.Configuration.ConnectionStringSettings cs in connStrings)
-                {
-                    // TODO find console vinduet
-                    Console.WriteLine(cs.Name);
-                    Console.WriteLine(cs.ProviderName);
-                    Console.WriteLine(cs.ConnectionString);
-                    DropDownListConnectionStrings.Items.Add(new ListItem(cs.Name, cs.ConnectionString));
-                }
-            }
+            // DEBUG Af sikkerhedsgrunde fjerne jeg alle Connectionstrings fra DropDown'en igen, så det ikke er hvem som helst der kan pille ved databasen!
+            // Hvis man bruger WindowsAzure, behøver man det ikke!
+            // Hvis du vil bruge Ladeporten, skal du kommentere nedenstående linie ud, men husk alle og enhver kan se alt, og slette alt i databasen.
+            DropDownListConnectionStrings.Items.Clear();
         }
     }
 
