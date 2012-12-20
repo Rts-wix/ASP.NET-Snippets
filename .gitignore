@@ -2,3 +2,5 @@
 /App_Data/*.LDF
 /App_Data/*.ldf
 
+
+*.DS_Store
