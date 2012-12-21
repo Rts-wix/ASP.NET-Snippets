@@ -16,8 +16,8 @@
     
     <div class="row-fluid">
     <div class="leftbox span5">
-        <asp:Button ID="ButtonNy" runat="server" Text="Opret ny hestesko" 
-            onclick="ButtonNy_Click" /><br />
+        <asp:LinkButton ID="ButtonNy" runat="server" class="btn btn-small"
+            onclick="ButtonNy_Click" ><i class="icon-plus"></i>Opret ny hestesko</asp:LinkButton><br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
             ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
