@@ -1,7 +1,6 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 <!DOCTYPE html>
-<!-- saved from url=(0066)http://twitter.github.com/bootstrap/examples/marketing-narrow.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="da"><head>
     <meta charset="utf-8">
     <title>Hjem - Asp.Net Snippets</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
