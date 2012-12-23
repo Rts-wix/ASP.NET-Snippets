@@ -1,14 +1,20 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HesteSko.aspx.cs" Inherits="Default2" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="da">
 <head runat="server">
     <title>CRUD Hestesko</title>
+<!-- Bootstrap -->
+    <link href="/bootstrap_assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/bootstrap_assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/bootstrap_assets/js/bootstrap.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="leftbox">
+    
+    <div class="row-fluid">
+    <div class="leftbox ">
         <asp:Button ID="ButtonNy" runat="server" Text="Opret ny hestesko" 
             onclick="ButtonNy_Click" /><br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
