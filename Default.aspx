@@ -153,7 +153,7 @@
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
+    <!-- Le javascript ....
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     
@@ -176,6 +176,5 @@
 	
 	<script src="./bootstrap_assets/js/application.js"></script>
 
-    
     </body></html>
     
