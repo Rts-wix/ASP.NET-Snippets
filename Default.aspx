@@ -81,7 +81,7 @@
 <div class="jumbotron"> 
         
         <h1>Super fede og nyttige eksempler i ASP.NET!</h1>
-        <p class="lead">I løbet af min undervisning på WebIntegrator uddannelsen i Roskilde, har jeg opsamlet forskellige kode opskrifter, som måske en dag kan indgå i en kogebog. Indtil da findes de her... på cyberspace.</p>
+        <p class="lead">I l&oslash;bet af min undervisning på WebIntegrator uddannelsen i Roskilde, har jeg opsamlet forskellige kode opskrifter, som måske en dag kan indgå i en kogebog. Indtil da findes de her... på cyberspace.</p>
         <p>Alle kilde filerne kan du se på github:<br>
         <a class="btn btn-large btn-success" href="https://github.com/Rts-wix/ASP.NET-Snippets">Se koden</a></p>
         
