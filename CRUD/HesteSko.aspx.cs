@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +57,7 @@ public partial class Default2 : System.Web.UI.Page
         cmd.CommandText = "INSERT INTO ASPSNIPPETS_CRUD_Hestesko (navn, størelse, beskrivelse) VALUES (@navn, @størelse, @beskrivelse)";
 
         cmd.Parameters.Add("@navn", SqlDbType.VarChar).Value = TextBoxNavn.Text;
-        cmd.Parameters.Add("@størelse", SqlDbType.VarChar).Value = TextBoxStørelse.Text; 
+        cmd.Parameters.Add("@størelse", SqlDbType.VarChar).Value = TextBoxStørelse.Text;
         cmd.Parameters.Add("@beskrivelse", SqlDbType.VarChar).Value = TextBoxBeskrivelse.Text;
 
         conn.Open();
@@ -74,7 +74,7 @@ public partial class Default2 : System.Web.UI.Page
 
     }
 
-    
+
     protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
     {
         // R i CRUD
@@ -91,7 +91,7 @@ public partial class Default2 : System.Web.UI.Page
 
             conn.Open();
             SqlDataReader reader = cmd.ExecuteReader();
-           
+
             if (reader.Read())
             {
                 TextBoxNavn.Text = reader["navn"].ToString();
@@ -146,7 +146,9 @@ public partial class Default2 : System.Web.UI.Page
 
         form1.DefaultButton = "ButtonOpret";
     }
-   
+}
+
+    /*
 =======
 ﻿using System;
 using System.Collections.Generic;
@@ -305,5 +307,6 @@ public partial class Default2 : System.Web.UI.Page
         form1.DefaultButton = "ButtonOpret";
     }
    
->>>>>>> fa7f1542f93610022597f02fe078c70f4558064a
+
 }
+    */
