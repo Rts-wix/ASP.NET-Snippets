@@ -18,20 +18,13 @@ public partial class sqlBackdoor_Default : System.Web.UI.Page
             System.Configuration.ConnectionStringSettingsCollection connStrings = System.Web.Configuration.WebConfigurationManager.ConnectionStrings;
 
             // TODO kan man bare bruge en datasource, og databind'e?
-            //DropDownListConnectionStrings.DataSource = connStrings;
+            DropDownListConnectionStrings.DataSource = connStrings;
+            DropDownListConnectionStrings.DataTextField = "Name";
+            DropDownListConnectionStrings.DataValueField = "ConnectionString";
+            DropDownListConnectionStrings.DataBind();
 
-            if (connStrings != null)
-            {
-                DropDownListConnectionStrings.Items.Clear();
-                foreach (System.Configuration.ConnectionStringSettings cs in connStrings)
-                {
-                    // TODO find console vinduet
-                    Console.WriteLine(cs.Name);
-                    Console.WriteLine(cs.ProviderName);
-                    Console.WriteLine(cs.ConnectionString);
-                    DropDownListConnectionStrings.Items.Add(new ListItem(cs.Name, cs.ConnectionString));
-                }
-            }
+            // af hensyn til sikkerheden...
+            DropDownListConnectionStrings.Items.Clear();
         }
     }
 
