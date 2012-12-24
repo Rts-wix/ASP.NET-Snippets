@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 <!DOCTYPE html>
 <html lang="da"><head>
     <meta charset="UTF-8">
@@ -81,9 +81,13 @@
 <div class="jumbotron"> 
         
         <h1>Super fede og nyttige eksempler i ASP.NET!</h1>
-        <p class="lead">I l&oslash;bet af min undervisning på WebIntegrator uddannelsen i Roskilde, har jeg opsamlet forskellige kode opskrifter, som måske en dag kan indgå i en kogebog. Indtil da findes de her... på cyberspace.</p>
+        <p class="lead">Når jeg underviser og vejleder på WebIntegrator uddannelsen, har jeg 
+            ofte brug for at forklare ne eller anden sammenhæng i et eksempel. Nu synes jeg 
+            det er på tide at gemme mine hårdt sammenskrabede erfaringer, så de kan 
+            genbruges, både af mig selv, og af andre. Jeg har opsamlet forskellige kode-opskrifter, som måske en dag kan indgå i en kogebog. Indtil da findes de her... på cyberspace.</p>
         <p>Alle kilde filerne kan du se på github:<br>
-        <a class="btn btn-large btn-success" href="https://github.com/Rts-wix/ASP.NET-Snippets">Se koden</a></p>
+        <a class="btn btn-large btn-success" 
+                href="https://github.com/Rts-wix/ASP.NET-Snippets" target="_blank">Se koden</a></p>
         
 		</div>
 		<hr>
