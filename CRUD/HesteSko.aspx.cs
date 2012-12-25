@@ -11,7 +11,7 @@ using System.Configuration;
 
 public partial class CRUD_Hestesko : System.Web.UI.Page
 {
-    // U i CRUD
+    // U i CRUD .
     protected void ButtonGem_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection();

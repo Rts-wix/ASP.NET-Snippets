@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/sample.master" AutoEventWireup="true" CodeFile="HesteSko.aspx.cs" Inherits="CRUD_Hestesko" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderTitle" Runat="Server">
     Hestesko - CRUD Demo 
 </asp:Content>
