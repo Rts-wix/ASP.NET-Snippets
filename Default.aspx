@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="bootstrap_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/docs/assets/css/bootstrap.css">
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -46,7 +46,7 @@
         margin-top: 28px;
       }
     </style>
-    <link rel="stylesheet" type="text/css" href="bootstrap_assets/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/docs/assets/css/bootstrap-responsive.css">
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -160,24 +160,24 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     
-    <script type="text/javascript" src="./bootstrap_assets/js/widgets.js"></script>
-    <script src="./bootstrap_assets/js/jquery.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-transition.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-alert.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-modal.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-dropdown.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-scrollspy.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-tab.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-tooltip.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-popover.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-button.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-collapse.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-carousel.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-typeahead.js"></script>
-    <script src="./bootstrap_assets/js/bootstrap-affix.js"></script>
+    <script type="text/javascript" src="./bootstrap/docs/js/widgets.js"></script>
+    <script src="./bootstrap/docs/js/jquery.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-transition.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-alert.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-modal.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-dropdown.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-scrollspy.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-tab.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-tooltip.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-popover.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-button.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-collapse.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-carousel.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-typeahead.js"></script>
+    <script src="./bootstrap/docs/js/bootstrap-affix.js"></script>
   
 	
-	<script src="./bootstrap_assets/js/application.js"></script>
+	<script src="./bootstrap/docs/js/application.js"></script>
 
     </body></html>
     
