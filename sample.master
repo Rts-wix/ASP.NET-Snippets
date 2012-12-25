@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="sample.master.cs" Inherits="sample" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderTitle" Runat="Server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderTitle" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderLocalStyles" Runat="Server">
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderLocalStyles" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderContent" Runat="Server">
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

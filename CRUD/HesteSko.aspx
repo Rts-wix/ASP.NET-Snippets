@@ -1,19 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HesteSko.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/sample.master" AutoEventWireup="true" CodeFile="Hestesko.aspx.cs" Inherits="CRUD_Hestesko" %>
 
-<!DOCTYPE html>
-<html lang="da">
-<head runat="server">
-    <title>CRUD Hestesko</title>
-    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
-<!-- Bootstrap -->
-    <link href="~/bootstrap_assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="~/bootstrap_assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="~/bootstrap_assets/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <form id="form1" runat="server">
-    
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderTitle" Runat="Server">
+    Hestesko - CRUD Demo 
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderLocalStyles" Runat="Server">
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderContent" Runat="Server">
+ 
+  <form id="form1" runat="server">
+   
     <div class="row-fluid">
     <div class="leftbox span5">
         <asp:LinkButton ID="ButtonNy" runat="server" class="btn btn-small"
@@ -85,6 +82,7 @@
             </div>
         </asp:Panel>
     </div>
-    </form>
-</body>
-</html>
+    </div>
+  </form>  
+</asp:Content>
+
