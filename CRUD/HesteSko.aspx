@@ -7,14 +7,17 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderLocalStyles" Runat="Server">
   	<style type="text/css">
-		#form1 div.top 
+		div#top 
 		{
 			background-image:url(images/hestesko.png);
+			height: 205px;
+			padding-left:50px;
+			padding-top:80px;
 		}
-		div.top h1
+		div#top h1
 		{
 			color:white;
-			text-shadow: 3px 3px 3px black ;	
+			text-shadow: 2px 2px 10px black ;	
 		}
 		
 	</style>
