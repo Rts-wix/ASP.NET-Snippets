@@ -91,38 +91,7 @@
         
 		</div>
 		<hr>
-	    <!-- Ahhh! hvor hopper den sådan??? -->
-        <div id="myCarousel" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="item active"> <img src="images/CRUD.png" alt="" width="870" height="500" >
-              <div class="carousel-caption">
-                <h4>CRUD demonstration</h4>
-                <p>Først og fremmest en simpel udgave.</p>
-              </div>
-            </div>
-            <div class="item "> <img src="images/Hestesko.png" alt="" width="870" height="500">
-              <div class="carousel-caption">
-                <h4>Hestesko</h4>
-                <p>Tre tekstfelter og et id, Fire databasekommandoer.</p>
-              </div>
-            </div>
-            <div class="item"> <img src="images/sqlBackdoor.png" alt="" width="870" height="500">
-              <div class="carousel-caption">
-                <h4>SqlBackdoor</h4>
-                <p>En tekstbox hvor du kan indtaste hvilke som helst SQL kommandoer. Et sikkerhedshul så stort som en ladeport. Men meget nyttigt...</p>
-              </div>
-            </div>
-            <div class="item"> <img src="images/SeasonImage.png" alt="" width="870" height="500">
-              <div class="carousel-caption">
-                <h4>SeasonImage</h4>
-                <p>Fremvis et billede eller et andet, afhængigt af dags dato.</p>
-              </div>
-            </div>
-          </div>
-          <a class="left carousel-control" href="http://twitter.github.com/bootstrap/javascript.html#myCarousel" data-slide="prev">‹</a> <a class="right carousel-control" href="http://twitter.github.com/bootstrap/javascript.html#myCarousel" data-slide="next">›</a> </div>
-        
-      <hr>
-
+	    
       <div class="row-fluid marketing">
         <div class="span6">
           <h4>CRUD demonstration</h4>
