@@ -82,7 +82,8 @@
         
         <h1>Super fede og nyttige eksempler i ASP.NET!</h1>
         <p class="lead">Når jeg underviser og vejleder på WebIntegrator uddannelsen, har jeg 
-            ofte brug for at forklare ne eller anden sammenhæng i et eksempel. Nu synes jeg 
+            ofte brug for at forklare en eller anden sammenhæng i et eksempel. </p>
+        <p>Nu synes jeg 
             det er på tide at gemme mine hårdt sammenskrabede erfaringer, så de kan 
             genbruges, både af mig selv, og af andre. Jeg har opsamlet forskellige kode-opskrifter, som måske en dag kan indgå i en kogebog. Indtil da findes de her... på cyberspace.</p>
         <p>Alle kilde filerne kan du se på github:<br>
