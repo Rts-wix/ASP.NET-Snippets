@@ -75,7 +75,7 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="Default.aspx">Hjem</a></li>
+          <li class="active"><a href="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/Default.aspx">Hjem</a></li>
           <li><a href="Kontakt.aspx">Kontakt</a></li>
         </ul>
         <h3 class="muted">ASP.NET Snippets</h3>
