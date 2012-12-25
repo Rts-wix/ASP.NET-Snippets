@@ -5,4 +5,5 @@
 
 *.DS_Store
 
-bootstrap_assets/*
+bootstrap_assets/**
+bootstrap_assets
