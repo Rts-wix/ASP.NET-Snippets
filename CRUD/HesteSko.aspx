@@ -29,9 +29,9 @@
    	<div id="top">
       <h1>Hestesko, CRUD demo</h1>
     </div>
-   
     <div class="row-fluid">
     <div class="leftbox span5">
+
         <asp:LinkButton ID="ButtonNy" runat="server" class="btn btn-small"
             onclick="ButtonNy_Click" ><i class="icon-plus"></i>Opret ny hestesko</asp:LinkButton><br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
@@ -47,7 +47,6 @@
         <div class="span3"><%# Eval("navn") %></div><div class="span3"> str. <%# Eval("størelse") %></div>
             <asp:LinkButton ID="ButtonRet" runat="server" class="btn btn-mini" CommandName="Ret" CommandArgument='<%# Eval("id") %>' ><i class="icon-edit "></i> Ret</asp:LinkButton>
             <asp:LinkButton ID="ButtonSlet" runat="server" class="btn btn-mini" OnClientClick='<%# Eval("navn", "return confirm(\"Er du sikker på at du vil slette {0}\");") %>' CommandName="Slet" CommandArgument='<%# Eval("id") %>'><i class="icon-remove-sign"></i> Slet</asp:LinkButton>
-            
             
         </div>
         </ItemTemplate>

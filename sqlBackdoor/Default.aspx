@@ -1,15 +1,46 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="sqlBackdoor_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="sqlBackdoor_Default" MasterPageFile="~/sample.master" %>
+<asp:Content runat="server" ID="title" ContentPlaceHolderID="ContentPlaceHolderTitle">
+SqlBackdoor 
+</asp:Content>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<asp:Content runat="server" ID="style" ContentPlaceHolderID="ContentPlaceHolderLocalStyles">
+    <style type="text/css">
+        div#backdoor
+        {
+            background-image:url("images/bluedoor.png");
+            padding: 10px;
+            
+        }
+        div#backdoor #ContentPlaceHolderContent_ContentPlaceHolderContent_TextBoxSQL
+        {
+            font-size:9px;
+            color:Blue;
+            width: 435px;
+            height: 360px;
+            opacity: 0.7;
+        }
+        
+    </style>
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>SQL Ladeport</title>
-    <meta lang="da" />
-</head>
-<body>
+<asp:Content ID="content" ContentPlaceHolderID="ContentPlaceHolderContent" runat="server" >
+    
+    <h1>
+        SqlBackdoor
+    </h1>
+    <p>
+        En bagdør til websitets database. 
+        Husk at den er en kæmpe sikkerhedsrisiko, på størrelse med en ladeport. Derfor 
+        er SelectBoxen hvor man vælger datasource tom. Du kan selv sætte den i funktion 
+        igen, på din test maskine.</p>
+    <p>
+        På den anden side. Hvis du ikke har andre mulighder for at udføre sql kommandoer 
+        på databasen, så er her en løsning... fx hvis du eksporteret din database med 
+        &quot;publish for provider&quot; til en *.sql fil, så kan du regenerere databasen her.</p>
+    
     <form id="form1" runat="server">
-    <div>
+    
+    <div id="backdoor">
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
             SelectCommand="SELECT * FROM [heste]"></asp:SqlDataSource>
@@ -20,8 +51,8 @@
         <asp:Button ID="ButtonNoGO" runat="server" onclick="ButtonNoGO_Click" 
             Text="Fjern 'GO'" />
         <br />
-        <asp:TextBox ID="TextBoxSQL" runat="server" Height="300px" TextMode="MultiLine" 
-            Width="800px">select * from heste</asp:TextBox>
+        <asp:TextBox ID="TextBoxSQL" runat="server"  TextMode="MultiLine" 
+            >select * from heste</asp:TextBox>
         <br />
         <asp:Button ID="ButtonExecuteQuery" runat="server" 
             onclick="ButtonExecuteQuery_Click" Text="Udfør" />
@@ -49,5 +80,5 @@
     
     </div>
     </form>
-</body>
-</html>
+
+</asp:Content>
