@@ -6,11 +6,26 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderLocalStyles" Runat="Server">
+  	<style type="text/css">
+		#form1 div.top 
+		{
+			background-image:url(images/hestesko.png);
+		}
+		div.top h1
+		{
+			color:white;
+			text-shadow: 3px 3px 3px black ;	
+		}
+		
+	</style>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderContent" Runat="Server">
  
   <form id="form1" runat="server">
+   	<div id="top">
+      <h1>Hestesko, CRUD demo</h1>
+    </div>
    
     <div class="row-fluid">
     <div class="leftbox span5">
