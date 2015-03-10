@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="<%= Request.ApplicationPath %>/bootstrap/docs/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/css/bootstrap.css">
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -50,7 +50,7 @@
     </style>
     <asp:ContentPlaceHolder ID="ContentPlaceHolderLocalStyles" runat="server">
     </asp:ContentPlaceHolder>
-    <link rel="stylesheet" type="text/css" href="<%= Request.ApplicationPath %>/bootstrap/docs/assets/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/css/bootstrap-responsive.css">
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -75,7 +75,7 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="Default.aspx">Hjem</a></li>
+          <li class="active"><a href="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/Default.aspx">Hjem</a></li>
           <li><a href="Kontakt.aspx">Kontakt</a></li>
         </ul>
         <h3 class="muted">ASP.NET Snippets</h3>
@@ -99,23 +99,23 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     
-  <script type="text/javascript" src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/widgets.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/jquery.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-transition.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-alert.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-modal.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-tab.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-tooltip.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-popover.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-button.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
-    <script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/bootstrap-affix.js"></script>
+  <script type="text/javascript" src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/widgets.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/jquery.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-alert.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-modal.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-tab.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-popover.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-button.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
+    <script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/bootstrap-affix.js"></script>
   
 	
-	<script src="<%= Request.ApplicationPath %>/bootstrap/docs/assets/js/application.js"></script>
+	<script src="<%= (Request.ApplicationPath != "/")?Request.ApplicationPath:"" %>/bootstrap/docs/assets/js/application.js"></script>
     </body></html>
     
